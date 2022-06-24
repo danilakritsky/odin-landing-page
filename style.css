@@ -1,0 +1,113 @@
+
+/* header */
+.header-logo {
+    vertical-align: middle;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+/* top pitch */
+.top-pitch .description {
+    flex: 1 1 0;
+    margin: 0;
+}
+
+
+.top-pitch img {
+    margin: 0;
+    flex: 1 1 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.top-pitch * {
+    border: greenyellow solid;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+/* cards */
+
+
+.cards,
+.cards * {
+    border: solid brown 1px;
+}
+h2 {
+    margin: 8px 0;
+    padding: 0;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card {
+    margin: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+.card img {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+
+/* quote */ 
+.quote * {
+    border: solid black;
+    flex: 1;
+}
+
+.quote figure {
+    margin: 10% 25%;
+}
+
+blockquote {
+    margin: 0;
+}
+
+blockquote+figcaption {
+    text-align: right;
+}
+
+
+/* bottom-pitch */
+
+.bottom-pitch-pane {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+    border: solid orange;
+    margin: 5% 25%;
+    padding: 0;
+    
+}
+
+.bottom-pitch {
+    border: red solid;
+}
+.bottom-pitch * {
+    border: lightseagreen solid;
+}
+
+h3 {
+    margin: 0
+}
+
+
+

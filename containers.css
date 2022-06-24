@@ -1,0 +1,68 @@
+body {
+    border: solid red;
+}
+body * {
+    border: solid black 0.5px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    height: 100vh;
+}
+
+.header,
+.top-pitch,
+.cards,
+.quote,
+.bottom-pitch {
+    padding: 8px 10%;
+}
+
+.top-pitch,
+.cards,
+.quote {
+   flex: 2;
+}
+
+.bottom-pitch {
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-pitch {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.quote {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.footer {
+    text-align: center;
+    justify-self: flex-end;
+}
+
+
+.bottom-pitch {
+    padding: 8px;
+ }
+
+
