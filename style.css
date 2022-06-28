@@ -1,13 +1,12 @@
-body {
-    /* border: solid red; */
+/* body {
     height: 100vh;
+} */
 
-}
+
 body * {
     font: initial;
     margin: initial;
     padding: initial;
-    border: solid black 0.1px;
 }
 
 body {
@@ -15,6 +14,22 @@ body {
     flex-direction: column;
 }
 
+.wrapper {
+    width: 80vh;
+    margin: 5vh auto;
+}
+
+.hero,
+.information,
+.quote,
+.call-to-action {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------- HEADER ---------- */
 .header {
     display: flex;
     justify-content: center;
@@ -38,21 +53,28 @@ body {
     padding: none;
     display: flex;
     gap: 1em;
-
 }
 
-.wrapper {
-    width: 50vh;
+.header a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.top-pitch .wrapper {
+/* ------- HERO ---------- */
+
+.hero .wrapper {
     display: flex;
     gap: 1em;
 }
 
-.top-pitch .description,
-.top-pitch img {
+.hero .description,
+.hero img {
     flex: 1;
+}
+
+/* ------- INFORMATION ---------- */
+.information h2 {
+    text-align: center;
 }
 
 .cards-list {
@@ -60,9 +82,6 @@ body {
     gap: 1em;
 }
 
-.cards h2 {
-    text-align: center;
-}
 
 .cards-list figure {
     display: flex;
@@ -75,13 +94,9 @@ body {
     height: 100px;
 }
 
+/* ------- CALL TO ACTION ---------- */
 
-.quote figcaption {
-    text-align: right;
-}
-
-
-.bottom-pitch .wrapper {
+.call-to-action .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,16 +105,7 @@ body {
 }
 
 
-.top-pitch,
-.cards,
-.quote,
-.bottom-pitch {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+/* ------- FOOTER ---------- */
 
 
 
@@ -108,4 +114,88 @@ body {
 }
 
 
+/* ------- STYLING ---------- */
+:root {
+    --extra-bold: 800;
+    --dark-background: #1f2937;
+    --button-color: #3882f6;
+    --call-to-action-background: var(--button-color);
+    --information-header-text: 36px extra-bold #1f2937;
+    --quote-text: 36px light italic #1f2937;
+}
 
+
+.header,
+.hero,
+.footer {
+    background-color: var(--dark-background);
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9faf8;
+}
+
+.hero .subtext,
+.header ul {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: var(--extra-bold);
+    color: #F9FAF8;
+}
+
+.hero img {
+    background-color:  #6e6f70;
+    color: white;
+    text-align: center;
+}
+
+
+.information h2 {
+    font-size: 36px;
+    font-weight: var(--extra-bold);
+    color: #1f2937;
+    padding-bottom: 1em;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.quote figure blockquote{
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote figcaption {
+    text-align: right;
+    color: #1f2937;
+    font-weight: bold;
+}
+
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border-radius: .5em;
+    padding: .25em;
+    border: solid white 0.1px;
+}
+
+.call-to-action .wrapper {
+    background-color: var(--button-color);
+    border-radius: .5em;
+    color: white;
+}
+
+
+.footer {
+    color: #F9faf8;
+    padding: .5em;
+}
