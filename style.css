@@ -1,7 +1,12 @@
-/* body {
-    height: 100vh;
-} */
+:root {
+    box-sizing: border-box;
+}
 
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
 
 body * {
     font: initial;
@@ -161,6 +166,34 @@ body {
     color: #1f2937;
     padding-bottom: 1em;
 }
+
+.information .img-container {
+    background-color: white;
+    border: solid var(--button-color) 3px;
+    border-radius: 0.5em;
+    height: 10vw;
+    width: 10vw;
+    color: #6e6f70;
+    text-align: center;
+}
+
+
+.information .card {
+    width: 10vw;
+
+}
+
+.information .cards-list {
+    display: flex;
+    justify-content: center;
+}
+
+.information figcaption {
+    text-align: center;
+    color: #6e6f70;
+}
+
+
 
 .quote {
     background-color: #e5e7eb;
